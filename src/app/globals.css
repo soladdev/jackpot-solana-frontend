@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flip-horizontal {
+  transform: scaleX(-1);
+}
+.flip-vertical {
+  transform: scaleY(-1);
+}
+
+/* Custom Scrollbar for Webkit Browsers */
+::-webkit-scrollbar {
+  width: 6px; /* Width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Background of the track */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #444; /* Color of the draggable part */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color when hovered */
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #333; /* Color when clicked */
+}
+
+.modal-open {
+  overflow: hidden !important;
+}
+
+* {
+  font-family: "Montserrat" !important;
+}
